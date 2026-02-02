@@ -1,0 +1,79 @@
+# Configuration for Purpose-AI-TTA System
+
+# TTA Loop Settings
+tta_loop:
+  enable_ai_enhancement: true
+  history_limit: 100
+  auto_save: true
+
+# Hybrid AI Configuration
+ai_providers:
+  grok:
+    enabled: true
+    model: "grok-beta"
+    timeout: 30
+  kimi:
+    enabled: true
+    model: "kimi-1.5"
+    timeout: 30
+  claude:
+    enabled: true
+    model: "claude-3-sonnet"
+    timeout: 30
+  
+  # Default active provider
+  default: "claude"
+
+# Capital Management (369 System)
+capital:
+  initial_amount: 1000000
+  splits:
+    innovation: 30  # 3 in 369
+    stability: 60   # 6 in 369
+    giveback: 10    # 9 in 369 (simplified to 10% for practical purposes)
+  
+  giveback_ethos:
+    enabled: true
+    community_focused: true
+    transparency: true
+
+# Moonshot Simulations
+moonshot:
+  monte_carlo_iterations: 1000
+  risk_threshold: 0.7
+  enable_advanced_scenarios: true
+  save_results: true
+
+# Security Settings
+security:
+  enable_encryption: true
+  secure_mode: true
+  api_key_masking: true
+  session_timeout: 3600  # seconds
+
+# War Room Interface
+interface:
+  theme: "adaptive"
+  language: "en"  # Future: Support for Danish (da)
+  commands:
+    - "tta"
+    - "fri-tale"
+    - "capital"
+    - "moonshot"
+    - "ai"
+    - "history"
+    - "help"
+    - "exit"
+
+# Give-back Ethos
+folket:
+  power_to_people: true
+  transparency: true
+  community_first: true
+  open_source_commitment: true
+
+# Logging
+logging:
+  level: "INFO"
+  file: "purpose_ai.log"
+  console: true
