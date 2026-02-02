@@ -30,9 +30,9 @@ class CapitalManager:
     
     def __init__(self, total_capital: float):
         self.total_capital = total_capital
-        self.splits = self._calculate_369_splits()
         self.giveback_pool = 0.0
         self.transaction_history = []
+        self.splits = self._calculate_369_splits()
         
     def _calculate_369_splits(self) -> Dict[str, CapitalSplit]:
         """Calculate the 369 capital splits"""
